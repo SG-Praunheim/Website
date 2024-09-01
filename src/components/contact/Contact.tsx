@@ -16,6 +16,7 @@ import RssFeedRoundedIcon from '@mui/icons-material/RssFeedRounded';
 import Divider from '@mui/material/Divider';
 import ReactDOM from 'react-dom';
 import ExpandText from './../expandText/ExpandText';
+import Map from './map';
 
 
 export default function Contact() {
@@ -24,6 +25,8 @@ export default function Contact() {
         <React.Fragment>
             <Divider id="contactContent" />
             <Typography variant="h3" gutterBottom>Kontakt</Typography>
+            
+            <Map/>
         </React.Fragment>
     )
 };
