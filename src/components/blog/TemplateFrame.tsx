@@ -42,6 +42,15 @@ interface TemplateFrameProps {
   children: React.ReactNode;
 }
 
+const scrollToHome = () => {
+  var section = GetDomObj("homeContent");
+  section.scrollIntoView( { behavior: 'smooth', block: 'start' } );
+};
+
+function GetDomObj(name : string) {
+  return (document.querySelector( '#' + name )) ?? new Element();
+}
+
 export default function TemplateFrame({
   showCustomTheme,
   toggleCustomTheme,
@@ -75,7 +84,7 @@ export default function TemplateFrame({
               aria-label="Home"
               startIcon={<HomeRounded />}
               component="a"
-              href="#"
+              onClick={scrollToHome}
               sx={{ display: { xs: 'none', sm: 'flex' } }}
             >
               Home
@@ -84,7 +93,7 @@ export default function TemplateFrame({
               size="small"
               aria-label="Home"
               component="a"
-              href="#"
+              onClick={scrollToHome}
               sx={{ display: { xs: 'auto', sm: 'none' } }}
             >
               <HomeRounded />

@@ -30,6 +30,15 @@ const StyledAppBar = styled(AppBar)(({ theme }) => ({
   flex: '0 0 auto',
 }));
 
+const scrollToHome = () => {
+  var section = GetDomObj("homeContent");
+  section.scrollIntoView( { behavior: 'smooth', block: 'start' } );
+};
+
+function GetDomObj(name) {
+  return (document.querySelector( '#' + name )) ?? new Element();
+}
+
 function TemplateFrame({
   showCustomTheme,
   toggleCustomTheme,
@@ -62,7 +71,7 @@ function TemplateFrame({
               aria-label="Home"
               startIcon={<ArrowUpwardRounded />}
               component="a"
-              href="#"
+              onClick={scrollToHome}
               sx={{ display: { xs: 'none', sm: 'flex' } }}
             >
               Home
@@ -71,7 +80,7 @@ function TemplateFrame({
               size="small"
               aria-label="Home"
               component="a"
-              href="#"
+              onClick={scrollToHome}
               sx={{ display: { xs: 'auto', sm: 'none' } }}
             >
               <ArrowUpwardRounded />
