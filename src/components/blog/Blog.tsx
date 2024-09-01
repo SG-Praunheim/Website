@@ -11,7 +11,7 @@ import getBlogTheme from './theme/getBlogTheme';
 import About from './../about/About';
 import Faq from './../faq/Faq';
 import Galerie from './../galerie/Galerie';
-import Contact from './../contact/Contact';
+import Contact from '../contact/Contact';
 
 
 export default function Blog() {

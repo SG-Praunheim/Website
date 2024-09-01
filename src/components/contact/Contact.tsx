@@ -10,14 +10,15 @@ import Typography from '@mui/material/Typography';
 import FormControl from '@mui/material/FormControl';
 import InputAdornment from '@mui/material/InputAdornment';
 import OutlinedInput from '@mui/material/OutlinedInput';
-import { styled } from '@mui/material/styles';
+import { makeStyles, styled } from '@mui/material/styles';
 import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
 import RssFeedRoundedIcon from '@mui/icons-material/RssFeedRounded';
 import Divider from '@mui/material/Divider';
 import ReactDOM from 'react-dom';
-import ExpandText from './../expandText/ExpandText';
-import Map from './map';
-import Socials from './socials';
+import ExpandText from '../expandText/ExpandText';
+import Map from './Map';
+import Socials from './Socials';
+import Address from './Address';
 
 
 export default function Contact() {
@@ -27,13 +28,26 @@ export default function Contact() {
             <Divider id="contactContent" />
             <Typography variant="h3" gutterBottom>Kontakt</Typography>
             <Grid container spacing={2} columns={12}>
-            <Grid size={{ xs: 12, md: 6 }}>
+
+                <Grid size={{ xs: 12, md: 6 }}>
                     <Map />
                 </Grid>
-                
+
                 <Grid size={{ xs: 12, md: 6 }}>
-                    <Socials />
+                    <Box sx={{ m: '2rem' }}>
+                        <Address />
+                    </Box>
+                    <Box sx={{ m: '2rem' }}>
+                        <Socials />
+                    </Box>
                 </Grid>
+
+                <Grid size={{ xs: 12, md: 12 }}>
+                    <Box >
+                        <Typography align='center' variant="h4" gutterBottom>Kontaktiere Uns Jetzt</Typography>
+                    </Box>
+                </Grid>
+
 
             </Grid>
 
