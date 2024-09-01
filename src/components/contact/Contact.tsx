@@ -27,7 +27,7 @@ export default function Contact() {
                     <Box sx={{ m: '2rem' }}>
                         <Socials />
                     </Box>
-                </Grid>
+                </Grid>                
 
                 <Grid size={{ xs: 12, md: 12 }}>
                     <EmailForm/>
