@@ -11,7 +11,7 @@ export default function Home() {
   );
 }
 
-export function useTitle(title: string) {
+function useTitle(title: string) {
   useEffect(() => {
     const prevTitle = document.title
     document.title = title
