@@ -123,7 +123,7 @@ export default function Faq() {
                     className={focusedCardIndex === 0 ? 'Mui-focused' : ''}
                 >
                     <SyledCardContent>
-                        <Typography gutterBottom variant="h6" component="div">Frage 2</Typography>
+                        <Typography gutterBottom variant="h6" component="div">Gibt es eine Altergrenze?</Typography>
                         <Collapse in={faqOpen1}>
                             <div id="collapse-text">
                                <Typography variant="body2" color="text.secondary" gutterBottom>{faqText1}</Typography>                                
@@ -143,7 +143,7 @@ export default function Faq() {
                     className={focusedCardIndex === 0 ? 'Mui-focused' : ''}
                 >
                     <SyledCardContent>
-                        <Typography gutterBottom variant="h6" component="div">Frage 3</Typography>
+                        <Typography gutterBottom variant="h6" component="div">Kann man Bahnen mieten?</Typography>
                         <Collapse in={faqOpen2}>
                             <div id="collapse-text">
                                <Typography variant="body2" color="text.secondary" gutterBottom>{faqText2}</Typography>                                

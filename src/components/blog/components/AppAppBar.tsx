@@ -68,6 +68,17 @@ export default function AppAppBar() {
     setOpen(newOpen);
   };
 
+ function scrollTo(e : React.MouseEvent<HTMLElement>) {
+    setOpen(false);
+    const myValue = e.currentTarget.getAttribute('data-my-value');
+    var section = GetDomObj(myValue + "Content");
+    section.scrollIntoView( { behavior: 'smooth', block: 'start' } );
+  }
+
+  function GetDomObj(name : string) : Element {
+    return (document.querySelector( '#' + name )) ?? new Element();
+  }
+
   return (
     <AppBar
       position="fixed"
@@ -78,22 +89,22 @@ export default function AppAppBar() {
           <Box sx={{ flexGrow: 1, display: 'flex', alignItems: 'center', px: 0 }}>
             <Sitemark />
             <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-            <Button variant="text" color="info" size="small" onClick={scrollToHome}>
+            <Button variant="text" color="info" size="small" data-my-value="home" onClick={scrollTo}>
               Home
               </Button>
-              <Button variant="text" color="info" size="small" onClick={scrollToNews}>
+              <Button variant="text" color="info" size="small" data-my-value="news" onClick={scrollTo}>
               News
               </Button>
-              <Button variant="text" color="info" size="small" onClick={scrollToAbout}>
+              <Button variant="text" color="info" size="small" data-my-value="about" onClick={scrollTo}>
                 Über uns
               </Button>
-              <Button variant="text" color="info" size="small" onClick={scrollToFaq}>
+              <Button variant="text" color="info" size="small" data-my-value="faq" onClick={scrollTo}>
                 FAQ
               </Button>
-              <Button variant="text" color="info" size="small" onClick={scrollToGalerie}>
+              <Button variant="text" color="info" size="small" data-my-value="galerie" onClick={scrollTo}>
                 Galerie
               </Button>
-              <Button variant="text" color="info" size="small" onClick={scrollToContact}>
+              <Button variant="text" color="info" size="small" data-my-value="contact" onClick={scrollTo}>
                 Kontakt
               </Button>
             </Box>
@@ -117,12 +128,12 @@ export default function AppAppBar() {
                   </IconButton>
                 </Box>
                 <Divider sx={{ my: 3 }} />
-                <MenuItem>Home</MenuItem>
-                <MenuItem>News</MenuItem>
-                <MenuItem>Über uns</MenuItem>
-                <MenuItem>FAQ</MenuItem>
-                <MenuItem>Galerie</MenuItem>
-                <MenuItem>Kontakt</MenuItem>     
+                <MenuItem data-my-value="home" onClick={scrollTo}>Home</MenuItem>
+                <MenuItem data-my-value="news" onClick={scrollTo}>News</MenuItem>
+                <MenuItem data-my-value="about" onClick={scrollTo}>Über uns</MenuItem>
+                <MenuItem data-my-value="faq" onClick={scrollTo}>FAQ</MenuItem>
+                <MenuItem data-my-value="galerie" onClick={scrollTo}>Galerie</MenuItem>
+                <MenuItem data-my-value="home" onClick={scrollTo}>Kontakt</MenuItem>        
                 
               </Box>
             </Drawer>

@@ -17,6 +17,7 @@ import Divider from '@mui/material/Divider';
 import ReactDOM from 'react-dom';
 import ExpandText from './../expandText/ExpandText';
 import Map from './map';
+import Socials from './socials';
 
 
 export default function Contact() {
@@ -25,8 +26,17 @@ export default function Contact() {
         <React.Fragment>
             <Divider id="contactContent" />
             <Typography variant="h3" gutterBottom>Kontakt</Typography>
-            
-            <Map/>
+            <Grid container spacing={2} columns={12}>
+            <Grid size={{ xs: 12, md: 6 }}>
+                    <Map />
+                </Grid>
+                
+                <Grid size={{ xs: 12, md: 6 }}>
+                    <Socials />
+                </Grid>
+
+            </Grid>
+
         </React.Fragment>
     )
 };

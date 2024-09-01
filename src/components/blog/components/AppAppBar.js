@@ -28,39 +28,6 @@ const StyledToolbar = styled(Toolbar)(({ theme }) => ({
   padding: '8px 12px',
 }));
 
-const scrollToHome = () => {
-  var section = GetDomObj("homeContent");
-  section.scrollIntoView( { behavior: 'smooth', block: 'start' } );
-};
-
-const scrollToNews = () => {
-  var section = GetDomObj("newsContent");
-  section.scrollIntoView( { behavior: 'smooth', block: 'start' } );
-};
-
-const scrollToAbout = () => {
-  var section = GetDomObj("aboutContent");
-  section.scrollIntoView( { behavior: 'smooth', block: 'start' } );
-};
-
-const scrollToFaq = () => {
-  var section = GetDomObj("faqContent");
-  section.scrollIntoView( { behavior: 'smooth', block: 'start' } );
-};
-
-const scrollToGalerie = () => {
-  var section = GetDomObj("galerieContent");
-  section.scrollIntoView( { behavior: 'smooth', block: 'start' } );
-};
-
-const scrollToContact = () => {
-  var section = GetDomObj("contactContent");
-  section.scrollIntoView( { behavior: 'smooth', block: 'start' } );
-};
-
-function GetDomObj(name) {
-  return (document.querySelector( '#' + name )) ?? new Element();
-}
 
 export default function AppAppBar() {
   const [open, setOpen] = React.useState(false);
@@ -68,6 +35,18 @@ export default function AppAppBar() {
   const toggleDrawer = (newOpen) => () => {
     setOpen(newOpen);
   };
+
+  const scrollTo = event => {
+    setOpen(false);
+    const {myValue } = event.currentTarget.dataset;
+    var section = GetDomObj(myValue + "Content");
+    section.scrollIntoView( { behavior: 'smooth', block: 'start' } );
+  }
+  
+  function GetDomObj(name) {
+    var section = (document.querySelector( '#' + name ));
+    return section;
+  }
 
   return (
     <AppBar
@@ -79,22 +58,22 @@ export default function AppAppBar() {
           <Box sx={{ flexGrow: 1, display: 'flex', alignItems: 'center', px: 0 }}>
             <Sitemark />
             <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-              <Button variant="text" color="info" size="small" onClick={scrollToHome}>
+              <Button variant="text" color="info" size="small" data-my-value="home" onClick={scrollTo}>
               Home
               </Button>
-              <Button variant="text" color="info" size="small" onClick={scrollToNews}>
+              <Button variant="text" color="info" size="small" data-my-value="news" onClick={scrollTo}>
               News
               </Button>
-              <Button variant="text" color="info" size="small" onClick={scrollToAbout}>
+              <Button variant="text" color="info" size="small" data-my-value="about" onClick={scrollTo}>
                 Über uns
               </Button>
-              <Button variant="text" color="info" size="small" onClick={scrollToFaq}>
+              <Button variant="text" color="info" size="small" data-my-value="faq" onClick={scrollTo}>
                 FAQ
               </Button>
-              <Button variant="text" color="info" size="small" onClick={scrollToGalerie}>
+              <Button variant="text" color="info" size="small" data-my-value="galerie" onClick={scrollTo}>
                 Galerie
               </Button>
-              <Button variant="text" color="info" size="small" onClick={scrollToContact}>
+              <Button variant="text" color="info" size="small" data-my-value="contact" onClick={scrollTo}>
                 Kontakt
               </Button>
             </Box>
@@ -117,12 +96,12 @@ export default function AppAppBar() {
                   </IconButton>
                 </Box>
                 <Divider sx={{ my: 3 }} />
-                <MenuItem>Home</MenuItem>
-                <MenuItem>News</MenuItem>
-                <MenuItem>Über uns</MenuItem>
-                <MenuItem>FAQ</MenuItem>
-                <MenuItem>Galerie</MenuItem>
-                <MenuItem>Kontakt</MenuItem>                
+                <MenuItem data-my-value="home" onClick={scrollTo}>Home</MenuItem>
+                <MenuItem data-my-value="news" onClick={scrollTo}>News</MenuItem>
+                <MenuItem data-my-value="about" onClick={scrollTo}>Über uns</MenuItem>
+                <MenuItem data-my-value="faq" onClick={scrollTo}>FAQ</MenuItem>
+                <MenuItem data-my-value="galerie" onClick={scrollTo}>Galerie</MenuItem>
+                <MenuItem data-my-value="home" onClick={scrollTo}>Kontakt</MenuItem>                
               </Box>
             </Drawer>
           </Box>
