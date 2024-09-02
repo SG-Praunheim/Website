@@ -20,34 +20,40 @@ import { ImageList, ImageListItem } from '@mui/material';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
 import Wappen from '../../assets/SGP_Wappen.png';
+import Carousel from 'react-material-ui-carousel';
+import Header from '../../assets/header.jpg'
 
 
 export default function Galerie() {
-  const theme = useTheme();
-  const matchDownMd = useMediaQuery(theme.breakpoints.down('md'));
-  const matchDownSm = useMediaQuery(theme.breakpoints.down('sm'));
+  // const theme = useTheme();
+  // const matchDownMd = useMediaQuery(theme.breakpoints.down('md'));
+  // const matchDownSm = useMediaQuery(theme.breakpoints.down('sm'));
 
-  function imageCols() : number {
-    if(matchDownSm)
-    {
-      return 1;
-    }
-    if(matchDownMd)
-    {
-      return 2;
-    }
+  // function imageCols(): number {
+  //   if (matchDownSm) {
+  //     return 1;
+  //   }
+  //   if (matchDownMd) {
+  //     return 2;
+  //   }
 
-    return 4;
-  }; 
+  //   return 4;
+  // };
 
-    return (
-        <React.Fragment>
-            <Divider id="galerieContent" />
-            <Typography variant="h3" align='center' gutterBottom>Galerie</Typography>
+  return (
+    <React.Fragment>
+      <Divider id="galerieContent" />
+      <Typography variant="h3" align='center' gutterBottom>Galerie</Typography>
 
-            <Typography variant="body2" gutterBottom>Dies sind Beispielbilder. Die "echte" Galerie ist gerade im entstehen...</Typography>
+      <Typography variant="body2" gutterBottom>Dies sind Beispielbilder. Die "echte" Galerie ist gerade im entstehen...</Typography>
 
-            <ImageList sx={{ width: '100%', height: '40rem' }} cols={imageCols()}>
+      <Carousel>
+        {
+        itemData.map((image, i) => <img key={i} src={image.img.src} />)
+        }
+      </Carousel>
+
+      {/* <ImageList sx={{ width: '100%', height: '40rem' }} cols={imageCols()}>
                 {itemData.map((item) => (
                     <ImageListItem>
                         <img
@@ -57,10 +63,10 @@ export default function Galerie() {
                         />
                     </ImageListItem>
                 ))}
-            </ImageList>
+            </ImageList> */}
 
-        </React.Fragment>
-    )
+    </React.Fragment>
+  )
 };
 
 const itemData = [
@@ -69,48 +75,48 @@ const itemData = [
     title: 'Wappen',
   },
   {
-    img: Wappen,
-    title: 'Wappen',
+    img: Header,
+    title: 'Header',
   },
   {
     img: Wappen,
     title: 'Wappen',
   },
   {
-    img: Wappen,
-    title: 'Wappen',
+    img: Header,
+    title: 'Header',
   },
   {
     img: Wappen,
     title: 'Wappen',
   },
   {
-    img: Wappen,
-    title: 'Wappen',
+    img: Header,
+    title: 'Header',
   },
   {
     img: Wappen,
     title: 'Wappen',
   },
   {
-    img: Wappen,
-    title: 'Wappen',
+    img: Header,
+    title: 'Header',
   },
   {
     img: Wappen,
     title: 'Wappen',
   },
   {
-    img: Wappen,
-    title: 'Wappen',
+    img: Header,
+    title: 'Header',
   },
   {
     img: Wappen,
     title: 'Wappen',
   },
   {
-    img: Wappen,
-    title: 'Wappen',
+    img: Header,
+    title: 'Header',
   },
-  
+
 ];
