@@ -9,11 +9,12 @@ import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
-import FacebookIcon from '@mui/icons-material/GitHub';
+import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/X';
 import SitemarkIcon from './SitemarkIcon';
 import Modal from '@mui/material/Modal';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 function Copyright() {
   return (
@@ -72,13 +73,13 @@ export default function Footer() {
           }}
         >
           <div>
-            <Link color="text.secondary" variant="body2" href="#">
+            <Link color="text.secondary" variant="body2" href="#" onClick={handleOpenDatenschutz}>
               Datenschutz
             </Link>
             <Typography sx={{ display: 'inline', mx: 0.5, opacity: 0.5 }}>
               &nbsp;•&nbsp;
             </Typography>
-            <Link color="text.secondary" variant="body2" href="#">
+            <Link color="text.secondary" variant="body2" href="#" onClick={handleOpenImpressum}>
               Impressum
             </Link>
             <Copyright />
@@ -92,11 +93,11 @@ export default function Footer() {
             <IconButton
               color="inherit"
               size="small"
-              href="#"
-              aria-label="GitHub"
+              href="https://www.instagram.com/sg_praunheim?igsh=MTEzb2xhdzVjaGRwdQ=="
+              aria-label="Instagram"
               sx={{ alignSelf: 'center' }}
             >
-              <FacebookIcon />
+              <InstagramIcon />
             </IconButton>
             <IconButton
               color="inherit"
@@ -111,10 +112,10 @@ export default function Footer() {
               color="inherit"
               size="small"
               href="#"
-              aria-label="LinkedIn"
+              aria-label="Facebook"
               sx={{ alignSelf: 'center' }}
             >
-              <LinkedInIcon />
+              <FacebookIcon />
             </IconButton>
           </Stack>
         </Box>

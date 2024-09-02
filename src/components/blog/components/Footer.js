@@ -10,12 +10,13 @@ import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
-import FacebookIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/X';
 import Modal from '@mui/material/Modal';
 import SitemarkIcon from './SitemarkIcon';
 import { Height } from '@mui/icons-material';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
 
 function Copyright() {
   return (
@@ -95,11 +96,11 @@ export default function Footer() {
             <IconButton
               color="inherit"
               size="small"
-              href="#"
-              aria-label="GitHub"
+              href="https://www.instagram.com/sg_praunheim?igsh=MTEzb2xhdzVjaGRwdQ=="
+              aria-label="Instagram"
               sx={{ alignSelf: 'center' }}
             >
-              <FacebookIcon />
+              <InstagramIcon />
             </IconButton>
             <IconButton
               color="inherit"
@@ -114,10 +115,10 @@ export default function Footer() {
               color="inherit"
               size="small"
               href="#"
-              aria-label="LinkedIn"
+              aria-label="Facebook"
               sx={{ alignSelf: 'center' }}
             >
-              <LinkedInIcon />
+              <FacebookIcon />
             </IconButton>
           </Stack>
         </Box>
