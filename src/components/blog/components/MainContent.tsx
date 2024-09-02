@@ -209,27 +209,9 @@ export default function MainContent() {
           <RssFeedRoundedIcon />
         </IconButton>
       </Box> */}
-        <Box
-          sx={{
-            display: 'flex',
-            flexDirection: { xs: 'column-reverse', md: 'row' },
-            width: '100%',
-            justifyContent: 'space-between',
-            alignItems: { xs: 'start', md: 'center' },
-            gap: 4,
-            overflow: 'auto',
-          }}
-        >
-          <Box
-            sx={{
-              display: 'inline-flex',
-              flexDirection: 'row',
-              gap: 3,
-              overflow: 'auto',
-            }}
-          >
+        
             <Typography variant='h3' align='center' gutterBottom>News</Typography>
-          </Box>
+          
           {/* <Box
           sx={{
             display: { xs: 'none', sm: 'flex' },
@@ -244,7 +226,6 @@ export default function MainContent() {
             <RssFeedRoundedIcon />
           </IconButton>
         </Box> */}
-        </Box>
         <Grid container spacing={2} columns={12}>
           <Grid size={{ xs: 12, md: 6 }}>
             <SyledCard
