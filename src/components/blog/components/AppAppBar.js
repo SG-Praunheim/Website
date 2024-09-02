@@ -13,6 +13,8 @@ import Drawer from '@mui/material/Drawer';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import Sitemark from './SitemarkIcon';
+import SGP from './../../../assets/SGP.png'
+import { Typography } from '@mui/material';
 
 const StyledToolbar = styled(Toolbar)(({ theme }) => ({
   display: 'flex',
@@ -56,10 +58,9 @@ export default function AppAppBar() {
       <Container maxWidth="lg">
         <StyledToolbar variant="dense" disableGutters>
           <Box sx={{ flexGrow: 1, display: 'flex', alignItems: 'center', px: 0 }}>
-            <Sitemark />
             <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-              <Button variant="text" color="info" size="small" data-my-value="home" onClick={scrollTo}>
-              Home
+              <Button sx={{color: '#1565c0', fontWeight: 'bold'}} variant="text" size="small" data-my-value="home" onClick={scrollTo}>
+                SG Praunheim             
               </Button>
               <Button variant="text" color="info" size="small" data-my-value="news" onClick={scrollTo}>
               News

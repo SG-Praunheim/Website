@@ -6,7 +6,7 @@ import Stack from '@mui/material/Stack';
 import InputLabel from '@mui/material/InputLabel';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
-import Modal from '@mui/material/Modal'
+import Modal from '@mui/material/Modal';
 import Divider from '@mui/material/Divider';
 import Box from '@mui/material/Box';
 

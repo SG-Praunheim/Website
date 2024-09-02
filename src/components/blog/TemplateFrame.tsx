@@ -81,23 +81,14 @@ export default function TemplateFrame({
             <Button
               variant="text"
               size="small"
-              aria-label="Home"
-              startIcon={<HomeRounded />}
+              aria-label="SG Praunheim"
               component="a"
               onClick={scrollToHome}
-              sx={{ display: { xs: 'none', sm: 'flex' } }}
+              sx={{ display: { xs: 'none', sm: 'flex', color: '#1565c0', fontWeight: 'bold'} }}
             >
-              Home
+              SG Praunheim
             </Button>
-            <IconButton
-              size="small"
-              aria-label="Home"
-              component="a"
-              onClick={scrollToHome}
-              sx={{ display: { xs: 'auto', sm: 'none' } }}
-            >
-              <HomeRounded />
-            </IconButton>
+           
             <Box sx={{ display: 'flex', gap: 1 }}>
               <FormControl variant="outlined" sx={{ minWidth: 180 }}>
                 <Select

@@ -18,6 +18,7 @@ import { styled } from '@mui/material/styles';
 import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
 import RssFeedRoundedIcon from '@mui/icons-material/RssFeedRounded';
 import Divider from '@mui/material/Divider';
+import Header from './../../../assets/header.jpg'
 
 const cardData = [
   {
@@ -194,8 +195,12 @@ export default function MainContent() {
     <React.Fragment>
       <Box sx={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
         <div id="homeContent">
-          <Typography variant="h1" gutterBottom>
-            Herzlich Willkommen!
+          <img src={Header.src} alt="Headerpicture" width="80%" style={{display: 'block', margin: 'auto'}}/>
+          <Typography variant="h1" gutterBottom sx={{textAlign: 'center'}}>
+            Herzlich Willkommen
+          </Typography>
+          <Typography variant="h1" gutterBottom sx={{textAlign: 'center'}}>
+            beim Kegelsportclub SG Praunheim!
           </Typography>
           <Typography>Schön, dass du auf unserer Seite vorbei schaust!
             Sieh dich um und wenn du neugierig geworden bist, lerne uns doch einfach persönlich kennen.

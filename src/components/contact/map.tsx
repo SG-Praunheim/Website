@@ -18,7 +18,9 @@ export default function Map() {
             const { Map } = await loader.importLibrary('maps');
 
             //init a marker
-            const {Marker} = await loader.importLibrary('marker') as google.maps.MarkerLibrary;
+            const { AdvancedMarkerElement } = (await google.maps.importLibrary(
+                "marker"
+              )) as google.maps.MarkerLibrary;
 
             const position = {
                 lat: 50.149970,
@@ -36,7 +38,7 @@ export default function Map() {
             const map = new Map(mapRef.current as HTMLDivElement, mapOptions);
 
             //put up a marker
-            const marker = new Marker({
+            const marker = new AdvancedMarkerElement({
                 map: map,
                 position: position,
             });
