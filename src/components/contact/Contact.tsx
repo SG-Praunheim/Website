@@ -13,7 +13,7 @@ export default function Contact() {
     return (
         <React.Fragment>
             <Divider id="contactContent" />
-            <Typography variant="h3" gutterBottom>Kontakt</Typography>
+            <Typography variant="h3" align='center' gutterBottom>Kontakt</Typography>
             <Grid container spacing={2} columns={12}>
 
                 <Grid size={{ xs: 12, md: 6 }}>

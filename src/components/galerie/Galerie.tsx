@@ -24,7 +24,7 @@ export default function Galerie() {
     return (
         <React.Fragment>
             <Divider id="galerieContent" />
-            <Typography variant="h3" gutterBottom>Galerie</Typography>
+            <Typography variant="h3" align='center' gutterBottom>Galerie</Typography>
 
             <Typography variant="body2" gutterBottom>Dies sind Beispielbilder. Die "echte" Galerie ist gerade im entstehen...</Typography>
 

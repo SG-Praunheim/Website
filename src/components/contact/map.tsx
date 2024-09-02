@@ -50,7 +50,7 @@ export default function Map() {
     return (
         <React.Fragment>
             <Typography variant="h4" gutterBottom>Google Maps</Typography>
-            <div style={{ height: '600px', width:'100%' }} ref={mapRef} />
+            <div style={{ height: '50vh', width:'100%' }} ref={mapRef} />
         </React.Fragment>
     )
 };

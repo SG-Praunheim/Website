@@ -240,7 +240,7 @@ export default function MainContent() {
               overflow: 'auto',
             }}
           >
-            <Typography variant='h3' gutterBottom>News</Typography>
+            <Typography variant='h3' align='center' gutterBottom>News</Typography>
           </Box>
           {/* <Box
           sx={{

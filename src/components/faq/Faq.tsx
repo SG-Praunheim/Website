@@ -91,7 +91,7 @@ export default function Faq() {
     return (
         <React.Fragment>
             <Divider id="faqContent" />
-            <Typography variant="h3" gutterBottom>FAQ</Typography>
+            <Typography variant="h3" align='center' gutterBottom>FAQ</Typography>
             
             <Grid size={{ xs: 12, md: 12 }}>
                 <SyledCard
