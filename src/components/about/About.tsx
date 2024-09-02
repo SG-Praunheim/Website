@@ -70,7 +70,7 @@ export default function About() {
     return (
         <React.Fragment>
             <Divider id="aboutContent" />
-            <Typography variant="h3" align='center' gutterBottom>Über uns</Typography>
+            <Typography variant="h3" align='center' gutterBottom>Über Uns</Typography>
 
             <Grid size={{ xs: 12, md: 12 }}>
             <SyledCard

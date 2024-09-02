@@ -78,13 +78,23 @@ export default function AppAppBar() {
                 Kontakt
               </Button>
             </Box>
+
+            <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
+            <Button sx={{color: '#1565c0', fontWeight: 'bold', align:'center'}} variant="text" size="small" data-my-value="home" onClick={scrollTo}>
+                SG Praunheim             
+              </Button>
+            </Box>
+
           </Box>
+
+
+
           <Box sx={{ display: { sm: 'flex', md: 'none' } }}>
             <IconButton aria-label="Menu button" onClick={toggleDrawer(true)}>
               <MenuIcon />
             </IconButton>
             <Drawer anchor="top" open={open} onClose={toggleDrawer(false)}>
-              <Box sx={{ p: 2, backgroundColor: 'background.default' }}>
+              <Box sx={{ px: 2, pt: 8, backgroundColor: 'background.default' }}>
                 <Box
                   sx={{
                     display: 'flex',

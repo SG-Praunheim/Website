@@ -14,6 +14,7 @@ import ArrowBackRoundedIcon from '@mui/icons-material/ArrowBackRounded';
 import ToggleColorMode from './components/ToggleColorMode';
 import getBlogTheme from './theme/getBlogTheme';
 import { ArrowUpwardRounded } from '@mui/icons-material';
+import Logo from '../../app/favicon.ico';
 
 const StyledAppBar = styled(AppBar)(({ theme }) => ({
   position: 'relative',
@@ -69,11 +70,11 @@ function TemplateFrame({
               variant="text"
               size="small"
               aria-label="SG Praunheim"
-              component="a"
+              component="div"
               onClick={scrollToHome}
               sx={{ display: { xs: 'none', sm: 'flex', color: '#1565c0', fontWeight: 'bold'} }}
             >
-              SG Praunheim
+              <img src={Logo.src} alt="SG Praunheim" height="40vh"/>
             </Button>
             <Box sx={{ display: 'flex', gap: 1 }}>
               <FormControl variant="outlined" sx={{ minWidth: 180 }}>
