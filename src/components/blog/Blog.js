@@ -12,6 +12,7 @@ import About from './../about/About';
 import Faq from './../faq/Faq';
 import Galerie from './../galerie/Galerie';
 import Contact from './../contact/Contact';
+import Guestbook from './../guestbook/Guestbook';
 
 import getBlogTheme from './theme/getBlogTheme';
 
@@ -68,7 +69,8 @@ export default function Blog() {
           <Faq/>
           <Galerie/>
           <Contact/>
-           {/* mit Google Maps und Socials */}
+           
+           <Guestbook/>
         </Container>
         <Footer />
       </ThemeProvider>

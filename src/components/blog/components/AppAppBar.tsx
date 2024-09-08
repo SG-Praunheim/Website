@@ -106,6 +106,9 @@ export default function AppAppBar() {
               <Button variant="text" color="info" size="small" data-my-value="contact" onClick={scrollTo}>
                 Kontakt
               </Button>
+              <Button variant="text" color="info" size="small" data-my-value="guestbook" onClick={scrollTo}>
+                Gästebuch
+              </Button>
             </Box>
 
             <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
@@ -139,8 +142,8 @@ export default function AppAppBar() {
                 <MenuItem data-my-value="about" onClick={scrollTo}>Über uns</MenuItem>
                 <MenuItem data-my-value="faq" onClick={scrollTo}>FAQ</MenuItem>
                 <MenuItem data-my-value="galerie" onClick={scrollTo}>Galerie</MenuItem>
-                <MenuItem data-my-value="home" onClick={scrollTo}>Kontakt</MenuItem>        
-                
+                <MenuItem data-my-value="contact" onClick={scrollTo}>Kontakt</MenuItem>        
+                <MenuItem data-my-value="guestbook" onClick={scrollTo}>Gästebuch</MenuItem>  
               </Box>
             </Drawer>
           </Box>

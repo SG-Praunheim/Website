@@ -12,6 +12,7 @@ import About from './../about/About';
 import Faq from './../faq/Faq';
 import Galerie from './../galerie/Galerie';
 import Contact from '../contact/Contact';
+import Guestbook from '../guestbook/Guestbook';
 
 
 export default function Blog() {
@@ -67,6 +68,7 @@ export default function Blog() {
           <Galerie/>
           <Contact/> 
           {/* mit Google Maps und Socials */}
+          <Guestbook/>
         </Container>
         <Footer/>
       </ThemeProvider>
