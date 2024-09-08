@@ -18,7 +18,7 @@ import ReactDOM from 'react-dom';
 import ExpandText from './../expandText/ExpandText';
 import Collapse from '@mui/material/Collapse';
 
-const faqText0: string = "Na klar! Komm einfach Dienstags ab 18 Uhr vorbei und bring saubere turnschuhe. Es ist bestimmt jemand von uns da. Oder mach vorher einen Termin mit uns aus."
+const faqText0: string = "Na klar! Komm einfach Dienstags ab 18 Uhr vorbei und bring saubere Turnschuhe mit. Es ist bestimmt jemand von uns da. Oder mach vorher einen Termin mit uns aus."
 const faqText1: string = "Antwort 2"
 const faqText2: string = "Antwort 3"
 
