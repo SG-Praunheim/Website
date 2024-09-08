@@ -96,8 +96,6 @@ export default function GuestbookForm(){
         event.preventDefault();
         const formData = new FormData(event.target);
 
-        // formData.append("access_key", "249dc002-30f6-4e2c-afe3-a7803882fb88");
-
         const object = Object.fromEntries(formData);
         const json = JSON.stringify(object);
 
@@ -113,7 +111,6 @@ export default function GuestbookForm(){
         if (result.success) {
             handleOpen();
             myCustomEvent.dispatchCustomEvent('myMessage', {message});
-            // console.log(result);
         }
     }
     return(

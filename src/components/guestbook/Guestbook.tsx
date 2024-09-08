@@ -85,15 +85,12 @@ export default function Guestbook() {
         //     anzahl = 2;
         // }
 
-        console.log(`id: ${id} next: ${next}`);
-
         const response = await fetch(`https://niklasdeegapi.azurewebsites.net/Guestbook?anzahl=${anzahl}&id=${id}&next=${next}`, {
             method: "Get",
         });
         const result = await response.json();
         
         if (result.success) {
-            console.log(result);
             setArray(result.guestbookEntries);
         }
     }

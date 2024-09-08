@@ -26,7 +26,7 @@ const cardData = [
     tag: 'Clubabend',
     title: 'Jeder 3. Dienstag ist ab sofort Clubabend bei uns',
     description:
-      'Um wieder mehr Geselligkeit in die Dienstage zu bekommen, haben wir uns entschieden, jeden 3. Dienstag im Monat einen Clubabend mit diversen Kegelspielen abzuhalten.',
+      'Jeden 3. Dienstag im Monat findet ein Clubabend statt, an dem wir beisammen kommen und diverse Kegelspiele spielen. Unser Training findet natürlich weiterhin jeden Dienstag statt.',
     authors: [
       { name: 'Niklas Deeg', avatar: '/static/images/avatar/1.jpg' },
     ],
