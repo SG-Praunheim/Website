@@ -7,6 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "SG Praunheim",
   description: "Website vom Kegelsportverein SG Praunheim",
+  keywords:"Kegeln, Praunheim, SG Praunheim, Alt-Praunheim, Kegelclub, Kegeln Frankfurt, Kegeln Praunheim, Kegelbahn, Gut Holz, Alle Neun, KV Praunheim, GK Praunheim ",
 };
 
 export default function RootLayout({
