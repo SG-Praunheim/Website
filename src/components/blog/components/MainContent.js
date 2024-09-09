@@ -18,7 +18,8 @@ import { styled } from '@mui/material/styles';
 import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
 import RssFeedRoundedIcon from '@mui/icons-material/RssFeedRounded';
 import Divider from '@mui/material/Divider';
-import Header from './../../../assets/header.jpg'
+import Header from './../../../assets/header.jpg';
+import Link from '@mui/material/Link';
 
 const cardData = [
   {
@@ -202,8 +203,17 @@ export default function MainContent() {
           <Typography variant="h1" gutterBottom sx={{textAlign: 'center'}}>
             beim Kegelsportclub SG Praunheim!
           </Typography>
-          <Typography>Schön, dass du auf unserer Seite vorbei schaust!
+          <Typography variant="body1">Schön, dass du auf unserer Seite vorbei schaust!
             Sieh dich um und wenn du neugierig geworden bist, lerne uns doch einfach persönlich kennen.
+          </Typography>
+          <Typography variant='body1'>
+            Für die Saison 24/25 haben wir wieder 2 Mannschaften gemeldet. Unsere 1. Mannschafft spielt in der Gruppenliga (M-GL2-120). Unsere 2. Mannschafft spielt in der B-Liga (X-BL2). 
+          </Typography>
+          <Typography variant='body1'>
+            Training findet jeden Dienstag ab 17 Uhr statt.
+          </Typography>
+          <Typography variant='body1'>
+            Auf der <Link href='https://hkbv.sportwinner.de/#'>HKBV Sportwinner Seite</Link> findest du den aktuellen Spielplan und alle Ergebnisse.
           </Typography>
         </div>
         <Divider id="newsContent" />

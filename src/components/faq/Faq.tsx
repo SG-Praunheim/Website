@@ -19,8 +19,8 @@ import ExpandText from './../expandText/ExpandText';
 import Collapse from '@mui/material/Collapse';
 
 const faqText0: string = "Na klar! Komm einfach Dienstags ab 18 Uhr vorbei und bring saubere Turnschuhe mit. Es ist bestimmt jemand von uns da. Oder mach vorher einen Termin mit uns aus."
-const faqText1: string = "Antwort 2"
-const faqText2: string = "Antwort 3"
+const faqText1: string = "Eine Altergrenze gibt es nicht. Bei uns kann man die komplette Jugend durchlaufen und auch mit 80 noch Spaß am Kegeln haben."
+const faqText2: string = "Die Miete einer Bahn kostet momentan 9€ die Stunde (kein Vergleich zu einer Bowlingbahn!). Kontaktiere uns oder unseren Wirt Tasso wenn du eine Bahn mieten möchtest."
 
 const StyledTypography = styled(Typography)({
 
