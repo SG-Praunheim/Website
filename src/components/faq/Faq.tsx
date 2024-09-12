@@ -18,9 +18,9 @@ import ReactDOM from 'react-dom';
 import ExpandText from './../expandText/ExpandText';
 import Collapse from '@mui/material/Collapse';
 
-const faqText0: string = "Na klar! Komm einfach Dienstags ab 18 Uhr vorbei und bring saubere Turnschuhe mit. Es ist bestimmt jemand von uns da. Oder mach vorher einen Termin mit uns aus."
+const faqText0: string = "Na klar! Komm einfach Dienstags ab 17 Uhr vorbei und bring saubere Turnschuhe mit. Es ist bestimmt jemand von uns da. Oder mach vorher einen Termin mit uns aus."
 const faqText1: string = "Eine Altergrenze gibt es nicht. Bei uns kann man die komplette Jugend durchlaufen und auch mit 80 noch Spaß am Kegeln haben."
-const faqText2: string = "Wir können bis zu 4 Bahnen vermieten, perfekt für Geburtstagsfeiern, Teamevents oder zum Schoppekegeln. Die Miete einer Bahn kostet momentan 9€ die Stunde (kein Vergleich zu einer Bowlingbahn!). Kontaktiere uns oder unseren Wirt Tasso, falls du eine Bahn mieten möchtest."
+const faqText2: string = "Unsere Bahnen können auch von Hobbykeglern gemietet werden – ideal für gesellige Abende mit Freunden, Feiern oder einfach, um den Alltag hinter sich zu lassen. Die Miete einer Bahn kostet momentan 9€ die Stunde (kein Vergleich zu einer Bowlingbahn!). Kontaktiere uns oder unseren Gastwirt Tasso, falls du eine Bahn mieten möchtest."
 
 const StyledTypography = styled(Typography)({
 

@@ -175,7 +175,7 @@ export default function Footer() {
                     Angaben gemäß § 5 TMG:
                     </Typography>
                     <Typography sx={{ mt: 2 }}>
-                    Thomas Franz
+                    Niklas Deeg
                     </Typography>
                     <Typography>SG Praunheim</Typography>
                     <Typography>Alt Praunheim 44</Typography>
@@ -187,13 +187,13 @@ export default function Footer() {
                     <Typography sx={{ mt: 2 }}>
                     Telefon: +49 69 76 37  79
                     </Typography>
-                    <Typography>E-Mail:  vorsitzender@praunheimer-kegler.de</Typography>
+                    <Typography>E-Mail:  sgpraunheim.kegeln@outlook.de</Typography>
 
                     <Typography variant="h6" component="h2" sx={{ mt: 2 }}>
                     Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:
                     </Typography>
                     <Typography sx={{ mt: 2 }}>
-                    Thomas Franz
+                    Niklas Deeg
                     </Typography>
                     <Typography>SG Praunheim</Typography>
                     <Typography>Alt Praunheim 44</Typography>

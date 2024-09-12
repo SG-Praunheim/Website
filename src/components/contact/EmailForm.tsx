@@ -112,6 +112,7 @@ export default function EmailForm() {
             handleOpen();
             console.log(result);
         }
+        event.target.reset();
     }
     return (
         <React.Fragment>

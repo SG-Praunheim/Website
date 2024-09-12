@@ -112,6 +112,7 @@ export default function GuestbookForm(){
             handleOpen();
             myCustomEvent.dispatchCustomEvent('myMessage', {message});
         }
+        event.target.reset();
     }
     return(
         <React.Fragment>

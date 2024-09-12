@@ -6,7 +6,15 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "SG Praunheim",
-  description: "Website vom Kegelsportverein SG Praunheim",
+  description: `Willkommen bei der SG-Praunheim – Dein Kegelclub!
+
+Wir sind ein engagierter Kegelclub, der sportlichen Ehrgeiz und geselliges Miteinander vereint. Bei uns sind alle willkommen, die Spaß am Kegeln haben – egal ob Anfänger, Hobbykegler oder ambitionierte Wettkämpfer.
+
+Unser Training findet jeden Dienstag ab 17 Uhr statt. Dabei kannst du deine Technik verbessern, dich mit anderen Mitgliedern messen und die Freude am Kegelsport erleben. Wir bieten eine entspannte Atmosphäre, in der jeder auf seine Kosten kommt.
+
+Hobbykegler aufgepasst! Du möchtest Kegeln ohne Vereinsbindung? Kein Problem! Unsere Bahnen können auch von Hobbykeglern gemietet werden – ideal für gesellige Abende mit Freunden, Feiern oder einfach, um den Alltag hinter sich zu lassen.
+
+Besuche uns und erlebe die Faszination Kegelsport hautnah!`,
   keywords: "Kegeln, Praunheim, SG Praunheim, Alt-Praunheim, Kegelclub, Kegeln Frankfurt, Kegeln Praunheim, Kegelbahn, Gut Holz, Alle Neun, KV Praunheim, GK Praunheim ",
 };
 
