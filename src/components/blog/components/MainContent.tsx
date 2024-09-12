@@ -19,6 +19,16 @@ import Divider from '@mui/material/Divider';
 import Header from './../../../assets/header.jpg';
 import Link from '@mui/material/Link';
 
+const text1 : string = `Wir sind ein engagierter Kegelclub, der sportlichen Ehrgeiz und geselliges Miteinander vereint. Bei uns sind alle willkommen, die Spaß am Kegeln haben – egal ob Anfänger, Hobbykegler oder ambitionierte Wettkämpfer.`;
+
+const text2 : string = `Unser Training findet jeden Dienstag ab 17 Uhr statt. Dabei kannst du deine Technik verbessern, dich mit anderen Mitgliedern messen und die Freude am Kegelsport erleben. Wir bieten eine entspannte Atmosphäre, in der jeder auf seine Kosten kommt.`;
+
+const text3 : string = 'Für die Saison 24/25 haben wir wieder 2 Mannschaften gemeldet. Unsere 1. Mannschafft spielt in der Gruppenliga (M-GL2-120). Unsere 2. Mannschafft spielt in der B-Liga (X-BL2).';
+
+const text5 : string = `Hobbykegler aufgepasst! Du möchtest Kegeln ohne Vereinsbindung? Kein Problem! Unsere Bahnen können auch von Hobbykeglern gemietet werden – ideal für gesellige Abende mit Freunden, Feiern oder einfach, um den Alltag hinter sich zu lassen.`;
+
+const text6 : string = `Besuche uns und erlebe die Faszination Kegelsport hautnah!`;
+
 const cardData = [
   {
     img: 'https://picsum.photos/800/450?random=1',
@@ -194,17 +204,24 @@ export default function MainContent() {
           <Typography variant="h1" gutterBottom sx={{textAlign: 'center'}}>
             beim Kegelsportclub SG Praunheim!
           </Typography>
-          <Typography variant="body1">Schön, dass du auf unserer Seite vorbei schaust!
-            Sieh dich um und wenn du neugierig geworden bist, lerne uns doch einfach persönlich kennen.
+
+          <Typography variant="body1">
+            {text1}
           </Typography>
-          <Typography variant='body1'>
-            Für die Saison 24/25 haben wir wieder 2 Mannschaften gemeldet. Unsere 1. Mannschafft spielt in der Gruppenliga (M-GL2-120). Unsere 2. Mannschafft spielt in der B-Liga (X-BL2). 
+          <Typography variant="body1" sx={{mt: 2}}>
+            {text2}
           </Typography>
-          <Typography variant='body1'>
-            Training findet jeden Dienstag ab 17 Uhr statt.
-          </Typography>
+          <Typography variant="body1">
+            {text3}
+          </Typography>      
           <Typography variant='body1'>
             Auf der <Link href='https://hkbv.sportwinner.de/#'>HKBV Sportwinner Seite</Link> findest du den aktuellen Spielplan und alle Ergebnisse.
+          </Typography>
+          <Typography variant="body1" sx={{mt: 2}}>
+            {text5}
+          </Typography>
+          <Typography variant="body1">
+            {text6}
           </Typography>
         </div>
 
