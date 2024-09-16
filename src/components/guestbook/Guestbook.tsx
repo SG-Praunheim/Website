@@ -15,8 +15,6 @@ import Avatar from '@mui/material/Avatar';
 import AvatarGroup from '@mui/material/AvatarGroup';
 import Button from '@mui/material/Button';
 import GuestbookForm from './GuestbookForm';
-// import { useTheme } from '@mui/material/styles';
-// import useMediaQuery from '@mui/material/useMediaQuery';
 import { EventManager } from '@/events/EventBus';
 
 type GuestbookEntry = {

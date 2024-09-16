@@ -13,6 +13,7 @@ import Faq from './../faq/Faq';
 import Galerie from './../galerie/Galerie';
 import Contact from './../contact/Contact';
 import Guestbook from './../guestbook/Guestbook';
+import News from '../news/News'
 
 import getBlogTheme from './theme/getBlogTheme';
 
@@ -62,6 +63,7 @@ export default function Blog() {
           sx={{ display: 'flex', flexDirection: 'column', my: 16, gap: 4 }}
         >
           <MainContent />
+          <News/>
           {/* <Latest /> */}
 
           {/* ToDo: Über uns, FAQ, Galerie und Kontakt einfügen */}
