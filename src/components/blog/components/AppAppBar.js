@@ -62,18 +62,18 @@ export default function AppAppBar() {
               <Button sx={{color: '#1565c0', fontWeight: 'bold'}} variant="text" size="small" data-my-value="home" onClick={scrollTo}>
                 SG Praunheim             
               </Button>
-              <Button variant="text" color="info" size="small" data-my-value="news" onClick={scrollTo}>
+              {/* <Button variant="text" color="info" size="small" data-my-value="news" onClick={scrollTo}>
               News
-              </Button>
+              </Button> */}
               <Button variant="text" color="info" size="small" data-my-value="about" onClick={scrollTo}>
                 Über uns
               </Button>
               <Button variant="text" color="info" size="small" data-my-value="faq" onClick={scrollTo}>
                 FAQ
               </Button>
-              <Button variant="text" color="info" size="small" data-my-value="galerie" onClick={scrollTo}>
+              {/* <Button variant="text" color="info" size="small" data-my-value="galerie" onClick={scrollTo}>
                 Galerie
-              </Button>
+              </Button> */}
               <Button variant="text" color="info" size="small" data-my-value="contact" onClick={scrollTo}>
                 Kontakt
               </Button>
@@ -111,10 +111,10 @@ export default function AppAppBar() {
                 </Box>
                 <Divider sx={{ my: 3 }} />
                 <MenuItem data-my-value="home" onClick={scrollTo}>Home</MenuItem>
-                <MenuItem data-my-value="news" onClick={scrollTo}>News</MenuItem>
+                {/* <MenuItem data-my-value="news" onClick={scrollTo}>News</MenuItem> */}
                 <MenuItem data-my-value="about" onClick={scrollTo}>Über uns</MenuItem>
                 <MenuItem data-my-value="faq" onClick={scrollTo}>FAQ</MenuItem>
-                <MenuItem data-my-value="galerie" onClick={scrollTo}>Galerie</MenuItem>
+                {/* <MenuItem data-my-value="galerie" onClick={scrollTo}>Galerie</MenuItem> */}
                 <MenuItem data-my-value="contact" onClick={scrollTo}>Kontakt</MenuItem>
                 <MenuItem data-my-value="guestbook" onClick={scrollTo}>Gästebuch</MenuItem>                
               </Box>

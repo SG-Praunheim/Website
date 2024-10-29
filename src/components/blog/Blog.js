@@ -63,13 +63,13 @@ export default function Blog() {
           sx={{ display: 'flex', flexDirection: 'column', my: 16, gap: 4 }}
         >
           <MainContent />
-          <News/>
+          {/* <News/> */}
           {/* <Latest /> */}
 
           {/* ToDo: Über uns, FAQ, Galerie und Kontakt einfügen */}
           <About/>
           <Faq/>
-          <Galerie/>
+          {/* <Galerie/> */}
           <Contact/>
            
            <Guestbook/>
