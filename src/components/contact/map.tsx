@@ -15,8 +15,10 @@ export default function Map() {
                 version: 'weekly',
             });
 
-            //const { Map } = await loader.importLibrary('maps');
-            const { Map, InfoWindow } = await google.maps.importLibrary("maps") as google.maps.MapsLibrary;
+            const { Map } = await loader.importLibrary('maps');
+            const { InfoWindow } = (await google.maps.importLibrary(
+                "InfoWindow"
+              )) as google.maps.MapsLibrary;
 
             //init a marker
             const { AdvancedMarkerElement } = (await google.maps.importLibrary(
