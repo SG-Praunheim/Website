@@ -58,11 +58,12 @@ export default function Map() {
             const infoWindow = new InfoWindow({
                 content: "The first marker"
             });
-
-            // Attach it to the marker we've just added
-            google.maps.event.addListener(marker, 'click', function() {
             infoWindow.open(map,marker);
-            });
+
+            // // Attach it to the marker we've just added
+            // google.maps.event.addListener(marker, 'click', function() {
+            // infoWindow.open(map,marker);
+            // });
 
         };
         initMap();
