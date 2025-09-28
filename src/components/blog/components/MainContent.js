@@ -25,7 +25,7 @@ const text1 = `Wir sind ein engagierter Kegelclub, der sportlichen Ehrgeiz und g
 
 const text2 = `Unser Training findet jeden Dienstag ab 17 Uhr statt. Dabei kannst du deine Technik verbessern, dich mit anderen Mitgliedern messen und die Freude am Kegelsport erleben. Wir bieten eine entspannte Atmosphäre, in der jeder auf seine Kosten kommt.`;
 
-const text3 = 'Für die Saison 24/25 haben wir wieder 2 Mannschaften gemeldet. Unsere 1. Mannschafft spielt in der Gruppenliga (M-GL2-120). Unsere 2. Mannschafft spielt in der B-Liga (X-BL2).';
+const text3 = 'Für die Saison 25/26 haben wir wieder 2 Mannschaften gemeldet. Unsere 1. Mannschafft spielt in der Gruppenliga (M-GL2-120). Unsere 2. Mannschafft spielt in der B-Liga (X-BL2) im Bezirk 2.';
 
 const text5 = `Hobbykegler aufgepasst! Du möchtest Kegeln ohne Vereinsbindung? Kein Problem! Unsere Bahnen können auch von Hobbykeglern gemietet werden – ideal für gesellige Abende mit Freunden, Feiern oder einfach, um den Alltag hinter sich zu lassen.`;
 

@@ -2,7 +2,8 @@
 
 import React, { useEffect } from "react";
 import Typography from '@mui/material/Typography';
-import { Loader } from '@googlemaps/js-api-loader'
+import { Loader } from '@googlemaps/js-api-loader';
+import { Content } from "next/font/google";
 
 export default function Map() {
 
@@ -15,7 +16,7 @@ export default function Map() {
                 version: 'weekly',
             });
 
-            const { Map } = await loader.importLibrary('maps');
+            const { Map, InfoWindow } = await google.maps.importLibrary("maps") as google.maps.MapsLibrary;
 
             //init a marker
             const { AdvancedMarkerElement } = (await google.maps.importLibrary(
@@ -23,8 +24,8 @@ export default function Map() {
               )) as google.maps.MarkerLibrary;
 
             const position = {
-                lat: 50.149970,
-                lng: 8.621500,
+                lat: 50.149976,
+                lng: 8.6213882,
             };
 
             // map options
@@ -37,10 +38,28 @@ export default function Map() {
             //set up the map
             const map = new Map(mapRef.current as HTMLDivElement, mapOptions);
 
+            // //set up the pin
+            // const pin  = new google.maps.marker.PinElement({
+                
+            // });
+
             //put up a marker
             const marker = new AdvancedMarkerElement({
                 map: map,
-                position: position,
+                position: position, 
+                title: 'SG Praunheim', 
+                //content: pin.element,
+                //gmpClickable: true,
+            });
+
+            // Create an info window to share between markers.
+            const infoWindow = new InfoWindow({
+                content: "The first marker"
+            });
+
+            // Attach it to the marker we've just added
+            google.maps.event.addListener(marker, 'click', function() {
+            infoWindow.open(map,marker);
             });
 
         };

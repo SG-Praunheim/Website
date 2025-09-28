@@ -133,12 +133,12 @@ export default function EmailForm() {
                         variant="outlined"
                         fullWidth
                         name="name"
-                        aria-label="Deine Name"
-                        placeholder="Deine name"
+                        aria-label="Dein Name"
+                        placeholder="Dein Name"
                         slotProps={{
                             htmlInput: {
                                 autoComplete: 'off',
-                                'aria-label': 'Deine Name',
+                                'aria-label': 'Dein Name',
                             },
                         }}
                         sx={{ width: '100%' }}
