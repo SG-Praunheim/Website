@@ -3,7 +3,6 @@
 import React, { useEffect } from "react";
 import Typography from '@mui/material/Typography';
 import { Loader } from '@googlemaps/js-api-loader';
-import { Content } from "next/font/google";
 
 export default function Map() {
 
@@ -16,7 +15,8 @@ export default function Map() {
                 version: 'weekly',
             });
 
-            const { Map, InfoWindow } = await google.maps.importLibrary("maps") as google.maps.MapsLibrary;
+            const { Map } = await loader.importLibrary('maps');
+            //const { Map, InfoWindow } = await google.maps.importLibrary("maps") as google.maps.MapsLibrary;
 
             //init a marker
             const { AdvancedMarkerElement } = (await google.maps.importLibrary(
@@ -24,8 +24,10 @@ export default function Map() {
               )) as google.maps.MarkerLibrary;
 
             const position = {
-                lat: 50.149976,
-                lng: 8.6213882,
+                // lat: 50.149976,
+                // lng: 8.6213882,
+                lat: 50.149970,
+                lng: 8.621500,
             };
 
             // map options
