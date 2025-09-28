@@ -15,8 +15,8 @@ export default function Map() {
                 version: 'weekly',
             });
 
-            const { Map } = await loader.importLibrary('maps');
-            //const { Map, InfoWindow } = await google.maps.importLibrary("maps") as google.maps.MapsLibrary;
+            //const { Map } = await loader.importLibrary('maps');
+            const { Map, InfoWindow } = await google.maps.importLibrary("maps") as google.maps.MapsLibrary;
 
             //init a marker
             const { AdvancedMarkerElement } = (await google.maps.importLibrary(
@@ -24,10 +24,10 @@ export default function Map() {
               )) as google.maps.MarkerLibrary;
 
             const position = {
-                // lat: 50.149976,
-                // lng: 8.6213882,
-                lat: 50.149970,
-                lng: 8.621500,
+                lat: 50.149976,
+               lng: 8.6213882,
+                // lat: 50.149970,
+                // lng: 8.621500,
             };
 
             // map options
@@ -51,18 +51,18 @@ export default function Map() {
                 position: position, 
                 title: 'SG Praunheim', 
                 //content: pin.element,
-                //gmpClickable: true,
+                gmpClickable: true,
             });
 
-            // // Create an info window to share between markers.
-            // const infoWindow = new InfoWindow({
-            //     content: "The first marker"
-            // });
+            // Create an info window to share between markers.
+            const infoWindow = new InfoWindow({
+                content: "The first marker"
+            });
 
-            // // Attach it to the marker we've just added
-            // google.maps.event.addListener(marker, 'click', function() {
-            // infoWindow.open(map,marker);
-            // });
+            // Attach it to the marker we've just added
+            google.maps.event.addListener(marker, 'click', function() {
+            infoWindow.open(map,marker);
+            });
 
         };
         initMap();
