@@ -52,15 +52,15 @@ export default function Map() {
                 //gmpClickable: true,
             });
 
-            // Create an info window to share between markers.
-            const infoWindow = new InfoWindow({
-                content: "The first marker"
-            });
+            // // Create an info window to share between markers.
+            // const infoWindow = new InfoWindow({
+            //     content: "The first marker"
+            // });
 
-            // Attach it to the marker we've just added
-            google.maps.event.addListener(marker, 'click', function() {
-            infoWindow.open(map,marker);
-            });
+            // // Attach it to the marker we've just added
+            // google.maps.event.addListener(marker, 'click', function() {
+            // infoWindow.open(map,marker);
+            // });
 
         };
         initMap();
