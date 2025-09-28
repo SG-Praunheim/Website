@@ -16,9 +16,9 @@ export default function Map() {
             });
 
             const { Map } = await loader.importLibrary('maps');
-            const { InfoWindow } = (await google.maps.importLibrary(
-                "InfoWindow"
-              )) as google.maps.MapsLibrary;
+            // const { InfoWindow } = (await google.maps.importLibrary(
+            //     "InfoWindow"
+            //   )) as google.maps.MapsLibrary;
 
             //init a marker
             const { AdvancedMarkerElement } = (await google.maps.importLibrary(
@@ -56,11 +56,11 @@ export default function Map() {
                 gmpClickable: true,
             });
 
-            // Create an info window to share between markers.
-            const infoWindow = new InfoWindow({
-                content: "The first marker"
-            });
-            infoWindow.open(map,marker);
+            // // Create an info window to share between markers.
+            // const infoWindow = new InfoWindow({
+            //     content: "The first marker"
+            // });
+            // infoWindow.open(map,marker);
 
             // // Attach it to the marker we've just added
             // google.maps.event.addListener(marker, 'click', function() {
